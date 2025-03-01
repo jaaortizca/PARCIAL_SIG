@@ -8,6 +8,8 @@ Configurar user.name  y user.email
 Crear una pàgina que muestre un mapa centrado en mi barrio 
 ## Solucion propuesta
 Utilizar una biblioteca de visor geogràfico: Leaflet, open layers, mapopen
+# Problema 5
+Crear un botón y asignarle un manejador de eventos. 
 #  Problema 4
 Mostrar el poligono de mi barrio 
 # posible solucion 
