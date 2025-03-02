@@ -19,3 +19,17 @@ async function loadPolygon (){
 loadPolygon();
 
 let btnTrees = document.getElementById("btnTrees");
+
+async function loadPoint (){
+    let myData2 = await fetch('arboles.geojson');
+    let myPoint = await myData2.json();
+        L.geoJSON(myPoint,
+        {
+            style:{
+                color:'blue',
+                
+            }
+        }
+    ).addTo(map);
+}
+loadPoint();
