@@ -18,7 +18,7 @@ Utilizar una biblioteca de visor geogràfico: Leaflet, open layers, mapopen.
 Hay en algunos procesos que por desconocimiento me generar errores que no identifico facilmente y en este caso me demore en que el zoom quedara en los parametros que yo queria, ademas, en el trabajo en clase no logre generar una visualizacion en la escala y lugar esperada.
 En el trabajo autonomo los cambios de zoom en el codigo si se vieron refernciados en la pagina.
 # Problema 4
-Crear un botón y asignarle un manejador de eventos. 
+Crear un botón con el nombre de Arboles y asignarle un manejador de eventos. 
 # Problema 5
 Mostrar el poligono de mi barrio 
 ## Solucion propuesta 
@@ -33,18 +33,32 @@ Crear el BBox de mi barrio
 ## Solucion propuesta 
 Utilizar la siguiente pagina en la web: https://geojson.io/#map=15.86/4.574882/-74.116969
 # Problema 7
-Obtener el Servicio REST de los arboles de Bogota
+Obtener el datos geograficos de los arboles de Bogota https://datosabiertos.bogota.gov.co/dataset/censo-arbolado-urbano
 ## Solucion propuesta 
 Buscar la informacion de terceros utilizando la siguiente pagina: https://geoportal.jbb.gov.co/agc/rest/services/SIGAU/CensoArbol/MapServer/0/query
+## Desarrollo del problema
 # Problema 8
-Descargar los datos filtrados desde la API Servicio REST con phyton.
+Descargar los datos de arboles filtrados desde la API Servicio REST con phyton.
 # Solucion propuesta 
 Utilizar cuaderno Jupiter para filtrar datos el codidigo geenrado fue compartido al profesor y esta refrenciado en esta pagina https://colab.research.google.com/drive/1w2x5rwZ8HejbdEmo5I8TiSIErRzOvJkE?authuser=1
 ## Desarrollo del problema
 Se realiza el procedimiento en clase, se crea el goejson de los arboles utilizando el bounding box y los datos Servicio REST pero al generar el archivo 'arboles_pesebre.geojson' no me aparece ningun elemento dentro del archivo .geojson
-Verifico con compañeros de clase la cantidad de arboles que aparecen esus respectivos barrios y la cantidades son significativas.
-Para segir la verificacion observo el visor de la pagina donde se referencian los datos e identifico que hay muy pocos arboles en el sector donde se localiza mi barrio pero me quedan uadas.
+Se verifica que el link utilizado para utilizar el Servicio REST no tenga ningun filtro de informacion con compañeros de clase.
+Verifico con compañeros de clase la cantidad de arboles que aparecen en sus respectivos barrios y la cantidades son significativas.
+Para segir la verificacion observo el visor de la pagina donde se referencian los datos e identifico que hay muy pocos arboles en el sector donde se localiza mi barrio pero me quedan dudas.
 sigo buscando otras referencias para identificar los arboles y encuentro un visor que muestra una base de datos mas detallada, este visor utiliza la misma base de datos con la que se realizo el filtrado en python. la pagina es la siguiente: https://mapas.bogota.gov.co/?l=48106&e=-74.85085126188838,4.310012792276676,-73.38623639372375,5.0087566024468755,4686&b=7256&show_menu=true
 Al tener dos repositorios clonados me remito a observar la cantidad de datos que contiene cada geojeson, generandome mas dudas respecto a la cantidad de arboles en mi zona de estudio.
-Despues de verificar en las pagians refernciadas vr los erroor en sintaxis no encuentro un error en el codigo y prosigo con la generacion del resto de lineas de codigo para la pagina
-
+Despues de verificar en las pagians refernciadas, ver los erroor en sintaxis no encuentro un error en el codigo y prosigo con la generacion del resto de lineas de codigo para la pagina.
+Cabe mencionar que en la consola del explorador no aparecen errores en los codigos.
+# Problema 9
+Crear dos botónes con los nombres de distancia y Siniestros y asignarle un manejador de eventos.
+# Problema 10
+Mostrar los arboles despues de dar click en el boton arboles.
+## Desarrollo del problema
+Teniendo como referencia la incositencia anterior la pagina carga, pero al dar click en el boton arboles no muestra ningun arbol.
+# Problema 11
+Crear un pdf que mida las distancias entre arboles despues de dar click en el boton distancias y que genere un PDF para mostrar estas relaciones de distancia entre arboles.
+## Desarrollo del problema
+La escritura del codigo genera un PDF con las caracteristicas definidas pero sin informacion, esto por la incositencia mencionada anteriormente con el archvo 'arboles_pesebre.geojson'.
+# Problema 12
+Obtener el Servicio REST de los Siniestros en Bogota
