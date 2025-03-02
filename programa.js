@@ -99,3 +99,32 @@ function  generatePDF(distances, totalTrees){
     documentPDF.save("Pesebre.pdf")
 
 }
+
+
+let btnSiniestros = document.getElementById("btnSiniestros");
+
+btnSiniestros.addEventListener('click', 
+    async function(){
+        let myData3 = await fetch("siniestros_pesebre.geojson");
+        let mypoints2 = (await myData3.json());
+        //Agregar la capa al mapa
+        L.geoJSON(
+            mypoints2,
+            {
+                pointToLayer: (feature, latlong)=>{
+
+                    return L.circleMarker(latlong, {
+                        radius:3,
+                        fillColor:'red',
+                        weight:1,
+                        opacity:0,
+                        fillOpacity: 0.5,
+                    })
+
+                }
+            }
+        ).addTo(map);
+
+    }
+    
+)

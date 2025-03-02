@@ -33,9 +33,9 @@ Crear el BBox de mi barrio
 ## Solucion propuesta 
 Utilizar la siguiente pagina en la web: https://geojson.io/#map=15.86/4.574882/-74.116969
 # Problema 7
-Obtener el datos geograficos de los arboles de Bogota https://datosabiertos.bogota.gov.co/dataset/censo-arbolado-urbano
+Buscar los datos geograficos de los arboles de Bogota https://datosabiertos.bogota.gov.co/dataset/censo-arbolado-urbano
 ## Solucion propuesta 
-Buscar la informacion de terceros utilizando la siguiente pagina: https://geoportal.jbb.gov.co/agc/rest/services/SIGAU/CensoArbol/MapServer/0/query
+Utilizar la informacion de terceros utilizando la siguiente pagina: https://geoportal.jbb.gov.co/agc/rest/services/SIGAU/CensoArbol/MapServer/0/query
 ## Desarrollo del problema
 # Problema 8
 Descargar los datos de arboles filtrados desde la API Servicio REST con phyton.
@@ -61,4 +61,14 @@ Crear un pdf que mida las distancias entre arboles despues de dar click en el bo
 ## Desarrollo del problema
 La escritura del codigo genera un PDF con las caracteristicas definidas pero sin informacion, esto por la incositencia mencionada anteriormente con el archvo 'arboles_pesebre.geojson'.
 # Problema 12
-Obtener el Servicio REST de los Siniestros en Bogota
+Buscar los datos geograficos de los siniestros de Bogota: https://datosabiertos.bogota.gov.co/dataset/historico-siniestros-bogota-d-c
+## Solucion propuesta 
+Utilizar la informacion de terceros utilizando la siguiente pagina: https://services2.arcgis.com/NEwhEo9GGSHXcRXV/arcgis/rest/services/HistoricoSiniestros/FeatureServer/0/query
+# Problema 13
+Descargar los datos de asiniestros filtrados desde la API Servicio REST con phyton.
+# Solucion propuesta 
+Utilizar cuaderno Jupiter para filtrar datos el codidigo geenrado fue compartido al profesor y esta refrenciado en esta pagina: https://colab.research.google.com/drive/1ntaok3NZiJXfUu4n_3CvBYjxt9pw2kNt?authuser=1#scrollTo=9xH7ei-DfRva
+## Desarrollo del problema
+Al utilizar una copia del cuaderno jupiter utilizado en la generarcion del filtro de los arboles en la generacion de los siniestros en mi barrio me genera un error con la lectura de la ruta del archivo de siniestros en mi drive, esta es la linea que genera el error: gpd = gpd.read_file('drive/MyDrive/ESPECIALIZACION/siniestros.geojson')
+Tambien verifique en Chatgpt para ver que posibles error se generan y me genera cambios en las lineas, las aplique pero apesar de eso me sigue genrando el error de la ruta.
+Dejo los cambios del chatgpt para que pudieran ser dialogados dentro de la correcion de este trabajo.
